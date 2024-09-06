@@ -80,39 +80,39 @@ $plainButtonActiveBgColor:#dee2e6;
 
 /// Background of a secondary button
 /// @group button
-$secondaryButtonBg: #607D8B;
+$secondaryButtonBg: #DFE7F2;
 
 /// Text color of a secondary button
 /// @group button
-$secondaryButtonTextColor: #ffffff;
+$secondaryButtonTextColor: #56759A;
 
 /// Border of a secondary button
 /// @group button
-$secondaryButtonBorder: 1px solid #607D8B;
+$secondaryButtonBorder: 1px solid #DFE7F2;
 
 /// Background of a secondary button in hover state
 /// @group button
-$secondaryButtonHoverBg: #546E7A;
+$secondaryButtonHoverBg: scale-color($secondaryButtonBg, $lightness: -10%) ;
 
 /// Text color of a secondary button in hover state
 /// @group button
-$secondaryButtonTextHoverColor: #ffffff;
+$secondaryButtonTextHoverColor: scale-color($secondaryButtonTextColor, $lightness: -10%) ;
 
 /// Border color of a secondary button in hover state
 /// @group button
-$secondaryButtonHoverBorderColor: #546E7A;
+$secondaryButtonHoverBorderColor: scale-color(#DFE7F2, $lightness: -10%);
 
 /// Background of a secondary button in pressed state
 /// @group button
-$secondaryButtonActiveBg: #455A64;
+$secondaryButtonActiveBg: scale-color($secondaryButtonBg, $lightness: -20%);
 
 /// Text color of a secondary button in pressed state
 /// @group button
-$secondaryButtonTextActiveColor: #ffffff;
+$secondaryButtonTextActiveColor: scale-color($secondaryButtonTextColor, $lightness: -20%);
 
 /// Border color of a secondary button in pressed state
 /// @group button
-$secondaryButtonActiveBorderColor: #455A64;
+$secondaryButtonActiveBorderColor: scale-color(#DFE7F2, $lightness: -20%);
 
 /// Box shadow of a secondary button in focused state
 /// @group button
@@ -120,39 +120,39 @@ $secondaryButtonFocusShadow: 0 0 0 0.2rem #B0BEC5;
 
 /// Background of an info button
 /// @group button
-$infoButtonBg: #03A9F4;
+$infoButtonBg: #F2F6FB;
 
 /// Text color of an info button
 /// @group button
-$infoButtonTextColor: #ffffff;
+$infoButtonTextColor: #8DA1B9;
 
 /// Border of an info button
 /// @group button
-$infoButtonBorder: 1px solid #03A9F4;
+$infoButtonBorder: 1px solid $infoButtonTextColor;
 
 /// Background of an info button in hover state
 /// @group button
-$infoButtonHoverBg: #039BE5;
+$infoButtonHoverBg: scale-color($infoButtonBg, $lightness: -10%);
 
 /// Text color of an info button in hover state
 /// @group button
-$infoButtonTextHoverColor: #ffffff;
+$infoButtonTextHoverColor: scale-color($infoButtonTextColor, $lightness: -10%);
 
 /// Border color of an info button in hover state
 /// @group button
-$infoButtonHoverBorderColor: #039BE5;
+$infoButtonHoverBorderColor: scale-color($infoButtonTextColor, $lightness: -10%);
 
 /// Background of an info button in pressed state
 /// @group button
-$infoButtonActiveBg: #0288D1;
+$infoButtonActiveBg: scale-color($infoButtonBg, $lightness: -20%);
 
 /// Text color of an info button in pressed state
 /// @group button
-$infoButtonTextActiveColor: #ffffff;
+$infoButtonTextActiveColor: scale-color($infoButtonTextColor, $lightness: -20%);
 
 /// Border color of an info button in pressed state
 /// @group button
-$infoButtonActiveBorderColor: #0288D1;
+$infoButtonActiveBorderColor: scale-color($infoButtonTextColor, $lightness: -20%);
 
 /// Box shadow of an info button in focused state
 /// @group button
@@ -200,15 +200,15 @@ $successButtonFocusShadow: 0 0 0 0.2rem lighten($successButtonBg, 35%);
 
 /// Background of a warning button
 /// @group button
-$warningButtonBg: #FFC107;
+$warningButtonBg: #E3C567;
 
 /// Text color of a warning button
 /// @group button
-$warningButtonTextColor: $textColor;
+$warningButtonTextColor: white;
 
 /// Border of a warning button
 /// @group button
-$warningButtonBorder: 1px solid #FFC107;
+$warningButtonBorder: 1px solid #E3C567;
 
 /// Background of a warning button in hover state
 /// @group button
@@ -216,7 +216,7 @@ $warningButtonHoverBg: #FFB300;
 
 /// Text color of a warning button in hover state
 /// @group button
-$warningButtonTextHoverColor: $textColor;
+$warningButtonTextHoverColor: white;
 
 /// Border color of a warning button in hover state
 /// @group button
@@ -433,3 +433,10 @@ $speedDialActionTextColor: #fff;
 /// Color of any action button on speed dial in hover state
 /// @group button
 $speedDialActionTextHoverColor: #fff;
+
+$filterButtonBg: #F8F7F2;
+$filterConfirmBg: #88B6BF;
+$filterConfirmHoverBg: scale-color($filterConfirmBg, $lightness: -10%);
+$buttonWithIconBg: #B6AAA5;
+$buttonWithIconHoverBg: scale-color($buttonWithIconBg, $lightness: -10%);
+$clearAllBg: #F8F7F2;

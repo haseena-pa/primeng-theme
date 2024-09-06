@@ -16,6 +16,12 @@
         }
     }
 
+    &.activity-filter-panel {
+        .p-panel-header {
+            background: $filterPanelHeaderBg
+        }
+    }
+
     &.p-panel-toggleable {
         .p-panel-header {
             padding: $panelToggleableHeaderPadding;

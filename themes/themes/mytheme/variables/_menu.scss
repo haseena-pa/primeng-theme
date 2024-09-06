@@ -42,6 +42,8 @@ $menuWidth: 12.5rem;
 /// @group menu
 $menuBg: #ffffff;
 
+$sideMenuBg: #afc0b5;
+
 /// Border of a menu
 /// @group menu
 $menuBorder: 1px solid #dee2e6;
@@ -76,7 +78,7 @@ $menuitemIconHoverColor: $textSecondaryColor;
 
 /// Background of a menuitrem in hover state
 /// @group menu
-$menuitemHoverBg: #e9ecef;
+$menuitemHoverBg: #E3C567;
 
 /// Text color of a menuitem in focus state
 /// @group menu
@@ -100,11 +102,11 @@ $menuitemIconActiveColor: $textSecondaryColor;
 
 /// Background of a menuitrem in active state
 /// @group menu
-$menuitemActiveBg: #e9ecef;
+$menuitemActiveBg: #E3C567;
 
 /// Background of a menuitem in active and focus states
 /// @group menu
-$menuitemActiveFocusBg: #e9ecef;
+$menuitemActiveFocusBg: #E3C567;
 
 /// Font size of an icon indicating the itrem has a submenu
 /// @group menu

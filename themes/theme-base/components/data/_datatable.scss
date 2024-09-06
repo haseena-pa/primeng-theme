@@ -10,7 +10,7 @@
     }
 
     .p-datatable-header {
-        background: $tableHeaderBg;
+        // background: $tableHeaderBg;
         color: $tableHeaderTextColor;
         border: $tableHeaderBorder;
         border-width: $tableHeaderBorderWidth;
@@ -19,7 +19,7 @@
     }
 
     .p-datatable-footer {
-        background: $tableFooterBg;
+        // background: $tableFooterBg;
         color: $tableFooterTextColor;
         border: $tableFooterBorder;
         border-width: $tableFooterBorderWidth;
@@ -34,7 +34,7 @@
         border-width: $tableHeaderCellBorderWidth;
         font-weight: $tableHeaderCellFontWeight;
         color: $tableHeaderCellTextColor;
-        background: $tableHeaderCellBg;
+        // background: $tableHeaderCellBg;
         transition: $listItemTransition;
     }
 
@@ -45,7 +45,7 @@
         border-width: $tableFooterCellBorderWidth;
         font-weight: $tableFooterCellFontWeight;
         color: $tableFooterCellTextColor;
-        background: $tableFooterCellBg;
+        // background: $tableFooterCellBg;
     }
 
     .p-sortable-column {
@@ -99,7 +99,7 @@
 
     .p-datatable-tbody {
         > tr {
-            background: $tableBodyRowBg;
+            // background: $tableBodyRowBg;
             color: $tableBodyRowTextColor;
             transition: $listItemTransition;
 

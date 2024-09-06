@@ -1,7 +1,7 @@
 // Theme Specific Variables
-$primaryColor: #2196F3;
-$primaryDarkColor: #1E88E5;
-$primaryDarkerColor: #1976D2;
+$primaryColor: #afc0b5;
+$primaryDarkColor: scale-color($primaryColor, $lightness: -10%) !default;
+$primaryDarkerColor: scale-color($primaryColor, $lightness: -20%) !default;
 $primaryTextColor: #ffffff;
 
 $colors: (
@@ -32,8 +32,8 @@ $colors: (
 @import './variables/_misc';
 
 :root {
-    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family:-apple-system, "Gotham", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family:-apple-system, "Gotham", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     --surface-a:#ffffff;
     --surface-b:#f8f9fa;
     --surface-c:#e9ecef;

@@ -10,6 +10,11 @@
     appearance: none;
     border-radius: $borderRadius;
 
+    &.activity-search {
+        background: $activitySearchInputBg;
+        border: none;
+    }
+
     &:enabled:hover {
         border-color: $inputHoverBorderColor;
     }
