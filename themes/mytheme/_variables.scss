@@ -3,6 +3,7 @@ $primaryColor: #afc0b5;
 $primaryDarkColor: scale-color($primaryColor, $lightness: -10%) !default;
 $primaryDarkerColor: scale-color($primaryColor, $lightness: -20%) !default;
 $primaryTextColor: #ffffff;
+$sideMenuBg: #afc0b5;
 
 $colors: (
     "blue": #2196F3,

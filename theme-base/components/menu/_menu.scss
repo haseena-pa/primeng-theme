@@ -1,45 +1,10 @@
 .p-menu {
     padding: $verticalMenuPadding;
-    background: $sideMenuBg;
+    background: $menuBg;
     color: $menuTextColor;
     border: $menuBorder;
     border-radius: $borderRadius;
     width: $menuWidth;
-
-    &.menu-container {
-        height: 100%;
-        overflow-y: auto;
-        width: max-content;
-        text-align: center;
-
-        .p-menu-start {
-            position: relative;
-        }
-        
-
-        @media only screen and (max-width: 768px) {
-            position: fixed;
-            bottom: 0;
-            width: 100vw;
-            height: max-content;
-            z-index: 1;
-            .p-menu-list {
-                display: flex;
-                overflow-x: auto;
-                li {
-                    width: max-content;
-                    
-                    .menuitem-text {
-                        display: none;
-                    }
-                }
-            }
-
-            .p-menu-start {
-                display: none;
-            }
-        }
-    }
 
     .p-menuitem {
         @include menuitem();

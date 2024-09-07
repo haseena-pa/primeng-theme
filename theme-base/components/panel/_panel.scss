@@ -16,12 +16,6 @@
         }
     }
 
-    &.activity-filter-panel {
-        .p-panel-header {
-            background: $filterPanelHeaderBg
-        }
-    }
-
     &.p-panel-toggleable {
         .p-panel-header {
             padding: $panelToggleableHeaderPadding;
@@ -54,7 +48,7 @@
     .p-panel-icons-end {
         order: 2;
         margin-left: auto;
-    }    
+    }
 
     .p-panel-icons-start {
         order: 0;
@@ -63,7 +57,7 @@
 
     .p-panel-icons-center {
         order: 2;
-        width:100%;
-        text-align:center;
+        width: 100%;
+        text-align: center;
     }
 }
