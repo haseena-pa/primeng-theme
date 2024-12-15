@@ -1,10 +1,10 @@
 /// Border color of a panel header
 /// @group panel
-$panelHeaderBorderColor: #dee2e6;
+$panelHeaderBorderColor: #eeeeee;
 
 /// Border of a panel header
 /// @group panel
-$panelHeaderBorder: 1px solid #dee2e6;
+$panelHeaderBorder: 1px solid #eeeeee;
 
 /// Background of a panel header
 /// @group panel
@@ -20,7 +20,7 @@ $panelHeaderFontWeight: 600;
 
 /// Padding of a panel header
 /// @group panel
-$panelHeaderPadding: 1rem;
+$panelHeaderPadding: 0.75rem;
 
 /// Font weight of a toggleable panel header
 /// @group panel
@@ -325,3 +325,5 @@ $splitterGutterBg:#f8f9fa;
 /// Background of the splitter gutter handle
 /// @group panel
 $splitterGutterHandleBg:#dee2e6;
+
+$filterPanelHeaderBg: #f8f7f2;

@@ -1,8 +1,9 @@
 .p-togglebutton.p-button {
-    background: $toggleButtonBg;
-    border: $toggleButtonBorder;
-    color: $toggleButtonTextColor;
+    background: $secondaryButtonBg;
+    border: $secondaryButtonBorder;
+    color: $secondaryButtonTextColor;
     transition: $formElementTransition;
+    border-radius: 1rem;
 
     .p-button-icon-left,
     .p-button-icon-right {
@@ -40,6 +41,21 @@
                 color: $toggleButtonIconActiveHoverColor;
             }
         }
+    }
+
+    &.activity-filter-toggle-btn {
+        background: #88b6b5;
+        color: white;
+
+        &:not(.p-disabled):not(.p-highlight):hover {
+            background: #a1c9c8;
+            color: white;
+        }
+
+                &.p-highlight {
+                    background: $warningButtonBg;
+                    border-color: $warningButtonBg;
+                }
     }
 }
 

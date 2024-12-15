@@ -20,7 +20,7 @@
     outline: $focusOutline;
     outline-offset: $focusOutlineOffset;
     box-shadow: $focusShadow;
-	border-color: $inputFocusBorderColor;
+    border-color: $inputFocusBorderColor;
 }
 
 @mixin focused-listitem() {
@@ -256,12 +256,15 @@
     ::-webkit-input-placeholder {
         @content;
     }
+
     :-moz-placeholder {
         @content;
     }
+
     ::-moz-placeholder {
         @content;
     }
+
     :-ms-input-placeholder {
         @content;
     }
@@ -283,6 +286,7 @@
                     padding-left: $val * ($index + 1);
                 }
             }
+
             @if $index < $length {
                 @include nested-submenu-indents($val, $index + 2, $length);
             }

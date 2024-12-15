@@ -1,1 +1,137 @@
 /* Customizations to the designer theme should be defined here */
+
+.p-inputtext {
+    &:focus {
+        box-shadow: none;
+    }
+    &.ng-dirty.ng-invalid {
+        @include invalid-input();
+    }
+
+    &.login-form-text-box {
+        border: none;
+        padding: 1rem;
+        background-color: var(--input-bg-color);
+    }
+}
+
+.p-dropdown {
+    &.login-form-text-box {
+        border: none;
+        padding: 0.5rem;
+        background-color: var(--input-bg-color);
+    }
+}
+
+.p-button.p-button-lg {
+    padding: 0.75rem;
+    font-weight: 300;
+}
+
+.p-button {
+    font-weight: 600;
+    .p-badge {
+        background-color: inherit;
+    }
+
+    &.edit-activity-icon {
+        background: $buttonWithIconBg;
+        border-color: $buttonWithIconBg;
+
+        &:hover {
+            background: $buttonWithIconHoverBg;
+            border-color: $buttonWithIconHoverBg;
+        }
+    }
+
+    &.activity-filter-confirm {
+        background: $filterConfirmBg;
+        border-color: $filterConfirmBg;
+
+        &:hover {
+            background: $filterConfirmHoverBg;
+            border-color: $filterConfirmHoverBg;
+        }
+    }
+
+    &.activity-filter-clear-all {
+        background: $clearAllBg;
+        border-color: $filterConfirmBg;
+        color: $textColor;
+
+        &:hover {
+            color: $textColor;
+        }
+    }
+
+    &.filter-button {
+        background: $filterButtonBg;
+        color: $textColor;
+    }
+}
+
+.p-toolbar {
+    background: none;
+    border-radius: none;
+}
+
+.p-panel {
+    &.activity-filter-panel {
+        .p-panel-header {
+            background: $filterPanelHeaderBg;
+        }
+    }
+}
+
+.p-menu {
+    &.menu-container {
+        background: $sideMenuBg;
+        height: 100%;
+        overflow-y: auto;
+        width: max-content;
+        text-align: center;
+
+        .p-menu-start {
+            position: relative;
+        }
+
+        @media only screen and (max-width: 768px) {
+            position: fixed;
+            bottom: 0;
+            width: 100vw;
+            height: max-content;
+            z-index: 1;
+
+            .p-menu-list {
+                display: flex;
+                overflow-x: auto;
+
+                li {
+                    width: max-content;
+
+                    .menuitem-text {
+                        display: none;
+                    }
+                }
+            }
+
+            .p-menu-start {
+                display: none;
+            }
+        }
+
+        .p-menuitem {
+            &:not(.p-highlight):not(.p-disabled) {
+                &.p-focus {
+                    > .p-menuitem-content {
+                        background: none;
+                    }
+                }
+
+                .active-menu-item {
+                    background: $menuitemActiveBg;
+                }
+            }
+        }
+    }
+}
